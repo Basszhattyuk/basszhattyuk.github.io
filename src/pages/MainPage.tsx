@@ -10,21 +10,26 @@ export default function MainPage() {
   return (
     <Box sx={{ p: isMobile ? 2 : 4, pt: 0, maxWidth: 800, margin: '0 auto' }}>
       <Stack spacing={3}>
-        <BasszButton variant="contained" onClick={() => navigate('/roadmap')}>
-          RoadMap
+        <BasszButton variant="contained" onClick={() => navigate('/register')}>
+          Hattyú akarok lenni!
+        </BasszButton>
+        <BasszButton variant="contained" onClick={() => navigate('/adatok')} disabled={true}>
+          Téli Majális
         </BasszButton>
         <BasszButton variant="contained" onClick={() => navigate('/szabalyzatok')}>
-          MINDEN FONTOS DOLOG!
+          Diáknapok szabályzat (2025-2026)
         </BasszButton>
         <BasszButton variant="contained" onClick={() => navigate('/rigmusok')}>
           Rigmusok
         </BasszButton>
+        {/*}
         <BasszButton variant="contained" onClick={() => navigate('/city-tour')}>
           City-Tour
         </BasszButton>
         <BasszButton variant="contained" onClick={() => navigate('/klan-tour')}>
           Klán-Tour
         </BasszButton>
+        */}
         <BasszButton variant="contained" onClick={() => navigate('/elerhetosegek')}>
           Elérhetőségek
         </BasszButton>

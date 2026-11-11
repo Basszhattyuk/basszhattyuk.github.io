@@ -12,6 +12,7 @@ import RulesPage from './pages/RulesPage';
 import RigmusokPage from './pages/RigmusokPage';
 
 import './assets/index.css';
+import RegistrationPage from './pages/RegisterPage';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/klan-tour" element={<KlanTourPage />} />
         <Route path="/elerhetosegek" element={<ContactPage />} />
         <Route path="/rigmusok" element={<RigmusokPage />} />
+        <Route path="/register" element={<RegistrationPage />} />
         {/*
         <Route path="/adatok" element={<RegistrationPage />} />
         <Route path="/polok-hoodie" element={<PolokHoodiePage />} />
